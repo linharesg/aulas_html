@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrícula</title>
+</head>
+<body>
+    <h1>Escola virtual</h1>
+    <h2>Formulário de Pré-Matrícula</h2>
+
+    <form method="post">
+        <fieldset>
+        <legend>Dados pessoais</legend>
+            <label for="nome">Nome do aluno:</label>
+            <input type="text" name="nome" id="nome"><br><br>
+
+            <label for="dataNascimento">Nascimento</label>
+            <input type="date" name="dataNascimento" min="1950-01-01" max="2022-01-01"><br><br>
+
+            <label>
+                Nome da mãe:
+                <input type="text" name="nomeMae"><br><br>
+            </label>
+
+            <label>
+                Nome do pai:
+                <input type="text" name="nomePai"><br><br>
+            </label>
+
+            <label>
+                Telefone:
+                <input type="tel">
+            </label>
+            <br><br><br>
+    </fieldset>
+
+    <fieldset>
+    <legend>Informações da matrícula</legend>
+        <label>
+            Série
+            <select name="serie">
+                <option value="" disabled selected>Selecione a Série</option>
+                <option value="1">1ª</option>
+                <option value="2">2ª</option>
+                <option value="3">3ª</option>
+                <option value="4">4ª</option>
+                <option value="5">5ª</option>
+                <option value="6">6ª</option>
+                <option value="7">7ª</option>
+                <option value="8">8ª</option>
+            </select><br><br>
+        </label>
+        
+        <p>Turno:</p>
+        <label>
+            <input type="radio" name="turno" id="">Manhã
+        </label>
+        <label>
+            <input type="radio" name="turno" id="">Turno
+        </label>
+        
+        <p>Atividades Extracurriculares</p>
+        <label>
+            <input type="checkbox" name="informatica">Informática<br>
+        </label>
+        <label>
+            <input type="checkbox" name="musica">Música<br>
+        </label>
+        <label>
+            <input type="checkbox" name="balet">Balet<br>
+        </label>
+        <label>
+            <input type="checkbox" name="pintura">Pintura<br>
+        </label>
+        <label>
+            <input type="checkbox" name="judo">Judô<br>
+        </label>
+        <label>
+            <input type="checkbox" name="futebol">Futebol<br>
+        </label>
+    </fieldset>
+
+    <button type="submit">Concluir</button>
+    <input type="reset" value="Limpar formulário">
+    </form>
+</body>
+</html>
