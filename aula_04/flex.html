@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        body {
+            background-color: aqua;
+        }
+
+        .container {
+            display: flex;
+            background-color: blueviolet;
+            padding: 10px;
+            justify-content: center;
+            /* column-gap:10px; */
+            /* row-gap: 10px; */
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .item {
+            background-color: antiquewhite;
+            height: 100px;
+            width: 100px;
+            border-radius: 10px;
+            /* text-align: center; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .item:nth-of-type(6) {
+            background-color:brown;
+        }
+
+        .item:nth-of-type(1) {
+            background-color:beige;
+            /* flex-grow: 1; */
+            flex-basis: 200px;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <p>Item 1</p>
+        </div>
+        <div class="item">
+            <p>Item 2</p>
+        </div>
+        <div class="item">
+            <p>Item 3</p>
+        </div>
+        <div class="item">
+            <p>Item 4</p>
+        </div>
+        <div class="item">
+            <p>Item 5</p>
+        </div>
+        <div class="item">
+            <p>Item 6</p>
+        </div>
+        <div class="item">
+            <p>Item 7</p>
+        </div>
+        <div class="item">
+            <p>Item 8</p>
+        </div>
+        <div class="item">
+            <p>Item 9</p>
+        </div>
+        <div class="item">
+            <p>Item 10</p>
+        </div>
+    </div>
+</body>
+</html>
