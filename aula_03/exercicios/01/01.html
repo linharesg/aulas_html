@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog do Gabriel</title>
-    <link rel="shortcut icon" href="img/favicon.jpg">
+    <link rel="shortcut icon" href="img/favicon.jpg" alt="Imagem de Freepik">
 </head>
 
 <body>
     <header>
-        <h1><img src="../01/img/logo_header_01.jpg" width="10%" alt="Logo do blog"></h1>
+        <h1><img src="../01/img/logo_header_01.jpg" width="10%" alt="Logo do blog: Imagem de Freepik"></h1>
+
         <nav>
             <ul>
                 <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Produtos</a></li>
@@ -20,73 +21,110 @@
                 <li><a href="https://pt.wikipedia.org/wiki/Especial:Aleat%C3%B3ria" target="_blank">Faça parte</a></li>
                 <li><a href="contato.html" target="_blank">Contato</a></li>
             </ul>
-            <form>
-                <input type="search" placeholder="Pesquisar no blog">
-                <input type="button" value="Pesquisar">
+            <form method="get">
+                <input type="search" name="pequisa-texto" placeholder="Pesquisar no blog">
+                <input type="submit" value="Pesquisar">
             </form>
         </nav>
 
         <audio autoplay controls>
-            <source src="../01/media/audio.mp3" type="audio/mpeg">
-            Seu navegador não suporta o arquivo de áudio.
+            <source src="media/audio.mp3" type="audio/mpeg">
+            <source src="media/audio00.ogg" type="audio/ogg">
+            <p>Seu navegador não suporta o arquivo de áudio.</p>
         </audio>
     </header>
-
     <main>
         <div>
             <article>
-                <div>
+                <section>
                     <h2>Imagens criadas por <abbr title="Inteligênca artificial">IA</abbr> confundem realidade e ficção
                     </h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex voluptatum, et quam ullam accusamus
                         distinctio neque illum voluptate eligendi iste mollitia explicabo! Dolores, unde cum. Quae enim
                         ducimus nesciunt possimus.</p>
                     <picture>
-                        <source media="(min-width: 1020px)" srcset="../01/img/aguaviva.avif">
-                        <source media="(min-width: 760px)" srcset="../01/img/gato.avif">
-                        <img src="../01/img/deserto.avif" alt="Praia com astronauta gigante">
+                        <source media="(min-width: 1020px)" srcset="img/aguaviva.avif" alt="Agua viva no ceu">
+                        <source media="(min-width: 760px)" srcset="img/gato.avif" alt="gato gigante dormindo">
+                        <img src="img/deserto.avif" alt="Praia com astronauta gigante">
                     </picture>
-                </div>
+                </section>
                 <section>
                     <h3>Comentários</h3>
-                    <dl>
-                        <dt>Fulano</dt>
-                        <dd>Que legal, achei que era o fim do mundo</dd>
-                        <dt>adriano0001</dt>
-                        <dd>conceteza e montage....</dd>
-                        <dt>Lorena</dt>
-                        <dd>Amei, nota 0</dd>
-                    </dl>
+                    <div>
+                        <div>
+                            <h4>Fulano</h4>
+                            <p> Que legal, pela foto achei que era o fim do mundo</p>
+                            <a href="#">Responder</a>
+                        </div>
+                        <div>
+                            <h4>adriano0001</h4>
+                            <p>conceteza e montage....</p>
+                            <a href="#">Responder</a>
+                            <div>
+                                <h4>edison</h4>
+                                <p>claro que é "montegem", não sabe ler a matéria?</p>
+                                <a href="#"> Responder</a>
+                            </div>
+                        </div>
+                        <div>
+                            <h4>Lorena</h4>
+                            <p> Amei, nota 0</p>
+                            <a href="#">Responder</a>
+                        </div>
+                    </div>
+                    <form method="get">
+                        <label for="novo-comentario">Comente também!</label>
+                        <textarea name="comentario" id="novo-comentario" cols="30" rows="10"
+                            placeholder="Escreva aqui o que você achou desta postagem!"></textarea>
+                        <input type="submit" value="Enviar">
+                    </form>
+
                 </section>
             </article>
-
             <hr>
-
             <article>
-                <div>
+                <section>
                     <h2>VÍDEO: Cachorro conservador tenta acabar com o skatismo</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex voluptatum, et quam ullam accusamus
                         distinctio neque illum voluptate eligendi iste mollitia explicabo! Dolores, unde cum. Quae enim
                         ducimus nesciunt possimus.</p>
                     <video src="../01/media/video_exemplo_01.mp4" controls width="50%"></video>
-                </div>
+                </section>
                 <section>
                     <h3>Comentários</h3>
-                    <dl>
-                        <dt>alguem1992</dt>
-                        <dd>não gostei</dd>
-                        <dt>gabriel123</dt>
-                        <dd>tá certíssimo</dd>
-                        <dt>gustavopd</dt>
-                        <dd>falta um adestramento</dd>
-                    </dl>
+                    <div>
+                        <div>
+                            <h4>alguem1992</h4>
+                            <p>não gostei da atitude do cachorro</p>
+                            <a href="#">Responder</a>
+                        </div>
+                        <div>
+                            <h4>gabriel123</h4>
+                            <p>alguém sabe qual é a raça?</p>
+                            <a href="#">Responder</a>
+                            <div>
+                                <h4>batista001</h4>
+                                <p>acho que é labrador</p>
+                                <a href="#">Responder</a>
+                            </div>
+                        </div>
+                        <div>
+                            <h4>gustavopd</h4>
+                            <p> falta um adestramento</p>
+                            <a href="#">Responder</a>
+                        </div>
+                    </div>
+                    <form method="get">
+                        <label for="novo-comentario">Comente também!</label>
+                        <textarea name="comentario" id="novo-comentario" cols="30" rows="10"
+                            placeholder="Escreva aqui o que você achou desta postagem!"></textarea>
+                        <input type="submit" value="Enviar">
+                    </form>
                 </section>
             </article>
-
             <hr>
-
             <article>
-                <div>
+                <section>
                     <h2>Iberê lança mais um vídeo</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex voluptatum, et quam ullam accusamus
                         distinctio neque illum voluptate eligendi iste mollitia explicabo! Dolores, unde cum. Quae enim
@@ -95,23 +133,36 @@
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
-                </div>
+                </section>
                 <section>
                     <h3>Comentários</h3>
-                    <dl>
-                        <dt>fulano123</dt>
-                        <dd>legal esse canal</dd>
-                        <dt>amanda1997</dt>
-                        <dd>bom dia...</dd>
-                        <dt>gabriel123</dt>
-                        <dd>parabens pelo post</dd>
-                    </dl>
+                    <div>
+                        <div>
+                            <h4>fulano123</h4>
+                            <p>legal esse canal</p>
+                            <a href="#">Responder</a>
+                        </div>
+                        <div>
+                            <h4>amanda1997</h4>
+                            <p>bom dia....</p>
+                            <a href="#">Responder</a>
+                        </div>
+                        <div>
+                            <h4>gabriel123</h4>
+                            <p> parabens pelo post</p>
+                            <a href="#">Responder</a>
+                        </div>
+                    </div>
+                    <form method="get">
+                        <label for="novo-comentario">Comente também!</label>
+                        <textarea name="comentario" id="novo-comentario" cols="30" rows="10"
+                            placeholder="Escreva aqui o que você achou desta postagem!"></textarea>
+                        <input type="submit" value="Enviar">
+                    </form>
                 </section>
             </article>
-
             <hr>
         </div>
-
         <!-- FAQ -->
         <section>
             <h3>FAQ</h3>
@@ -146,5 +197,4 @@
         </div>
     </footer>
 </body>
-
 </html>
